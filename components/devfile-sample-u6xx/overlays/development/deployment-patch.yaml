@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-u6xx
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0016-tenant/tkrw-pr714-0075-0016-app/devfile-sample-u6xx@sha256:c889da0d471a20f7376dab9bee51b83e942883200976f7a6d27bef52b4ede1e7
+        name: my-nodejs
+        resources: {}
+status: {}
